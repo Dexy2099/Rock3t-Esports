@@ -1,0 +1,577 @@
+#particles-js{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:-1;
+}
+
+body{
+    background:#0b0b0b;
+    overflow-x:hidden;
+}
+
+*{    
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+body{
+
+background:#0e0e0e;
+color:white;
+
+}
+
+header{
+
+position:fixed;
+top:0;
+left:0;
+
+width:100%;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:20px 80px;
+
+background:rgba(0,0,0,.6);
+
+backdrop-filter:blur(10px);
+
+z-index:999;
+
+}
+
+.logo img{
+
+width: 50px;
+
+}
+
+nav a{
+
+color:white;
+text-decoration:none;
+margin-left:40px;
+transition:.3s;
+
+}
+
+nav a:hover{
+
+color:#9f9f9f;
+
+}
+
+.hero{
+
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+
+}
+
+.overlay{
+
+background:rgba(0,0,0,.55);
+
+width:100%;
+
+height:100%;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+}
+
+.hero h1{
+
+font-size:110px;
+
+letter-spacing:8px;
+
+font-weight:900;
+
+}
+
+.hero p{
+
+font-size:24px;
+
+margin:20px;
+
+}
+
+.btn{
+
+background:#5a5a5a;
+
+padding:16px 45px;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:8px;
+
+transition:.3s;
+
+}
+
+.btn:hover{
+
+background:#909090;
+
+}
+
+section{
+
+padding:120px;
+
+}
+
+h2{
+
+font-size:45px;
+
+margin-bottom:30px;
+
+}
+
+.sobre p{
+
+max-width:900px;
+
+line-height:35px;
+
+font-size:18px;
+
+}
+
+.cards{
+
+display:flex;
+
+gap:30px;
+
+margin-top:40px;
+
+}
+
+.card{
+
+background:#1c1c1c;
+
+padding:40px;
+
+border-radius:15px;
+
+flex:1;
+
+transition:.4s;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.stats{
+
+display:flex;
+
+justify-content:space-around;
+
+text-align:center;
+
+background:#161616;
+
+}
+
+.stats h2{
+
+font-size:60px;
+
+}
+
+.parceiros{
+    padding:120px;
+    text-align:center;
+    background:#111;
+}
+
+.logos{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:40px;
+    margin-top:50px;
+}
+
+.sponsor{
+    width:220px;
+    height:120px;
+    background:#1a1a1a;
+    border:2px solid #2c2c2c;
+    border-radius:15px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transition:.3s;
+    overflow:hidden;
+    text-decoration:none;
+}
+
+.sponsor:hover{
+    transform:translateY(-8px);
+    border-color:#8a8a8a;
+    box-shadow:0 0 20px rgba(255,255,255,.12);
+}
+
+.sponsor img{
+    max-width:75%;
+    max-height:75%;
+    object-fit:contain;
+    transition:.3s;
+}
+
+.sponsor:hover img{
+    transform:scale(1.08);
+}
+
+.contato{
+
+text-align:center;
+
+}
+
+footer{
+
+padding:30px;
+
+text-align:center;
+
+background:black;
+
+color:#888;
+
+}
+
+.hero-logo{
+    width:200px;
+    max-width:90%;
+    margin-bottom:30px;
+    filter:drop-shadow(0 0 25px rgba(255,255,255,.15));
+    animation:float 4s ease-in-out infinite;
+    transition:.3s;
+}
+
+.hero-logo:hover{
+    transform:scale(1.05);
+    filter:drop-shadow(0 0 40px rgba(255,255,255,.35));
+}
+
+@keyframes float{
+    0%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-12px);
+    }
+    100%{
+        transform:translateY(0);
+    }
+}
+
+.players-page{
+
+padding:170px 8%;
+text-align:center;
+
+}
+
+.players-page h1{
+
+font-size:55px;
+margin-bottom:10px;
+
+}
+
+.players-page p{
+
+color:#aaa;
+margin-bottom:60px;
+
+}
+
+.players-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:35px;
+
+}
+
+.player-card{
+
+background:#151515;
+
+border:1px solid #2d2d2d;
+
+border-radius:18px;
+
+padding:35px;
+
+transition:.35s;
+
+}
+
+.player-card:hover{
+
+transform:translateY(-10px);
+
+border-color:#777;
+
+box-shadow:0 0 30px rgba(255,255,255,.08);
+
+}
+
+.player-card img{
+
+width:140px;
+height:140px;
+
+border-radius:50%;
+
+object-fit:cover;
+
+border:4px solid #555;
+
+margin-bottom:20px;
+
+}
+
+.player-card h2{
+
+font-size:28px;
+
+margin-bottom:5px;
+
+}
+
+.player-card span{
+
+display:block;
+
+color:#999;
+
+margin-bottom:20px;
+
+}
+
+.line{
+
+width:70px;
+height:3px;
+
+background:#777;
+
+margin:20px auto;
+
+}
+
+.player-card ul{
+
+list-style:none;
+
+padding:0;
+
+}
+
+.player-card li{
+
+padding:8px 0;
+
+color:#ddd;
+
+}
+
+.ativo{
+
+color:#fff;
+font-weight:700;
+
+}
+
+.categorias{
+
+padding:170px 8%;
+text-align:center;
+
+}
+
+.categorias h1{
+
+font-size:55px;
+margin-bottom:15px;
+
+}
+
+.categorias p{
+
+color:#999;
+margin-bottom:60px;
+
+}
+
+.categoria-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:35px;
+
+}
+
+.categoria-card{
+
+background:#181818;
+
+border:1px solid #2b2b2b;
+
+border-radius:18px;
+
+padding:45px;
+
+text-decoration:none;
+
+color:white;
+
+transition:.35s;
+
+}
+
+.categoria-card:hover{
+
+transform:translateY(-10px);
+
+border-color:#8a8a8a;
+
+box-shadow:0 0 30px rgba(255,255,255,.08);
+
+}
+
+.categoria-card img{
+
+width:90px;
+
+margin-bottom:25px;
+
+}
+
+.categoria-card h2{
+
+font-size:30px;
+
+margin-bottom:10px;
+
+}
+
+.categoria-card span{
+
+color:#999;
+
+font-size:17px;
+
+}
+
+.social{
+    padding:90px 0;
+    text-align:center;
+    background:#0b0b0b;
+}
+
+.social h2{
+    font-size:42px;
+    margin-bottom:40px;
+}
+
+.social-icons{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.social-icons a{
+    width:70px;
+    height:70px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:#181818;
+    border:2px solid #2d2d2d;
+    border-radius:50%;
+
+    color:#fff;
+    text-decoration:none;
+
+    font-size:30px;
+
+    transition:.3s;
+}
+
+.social-icons a:hover{
+    transform:translateY(-8px) scale(1.1);
+    border-color:#bdbdbd;
+    box-shadow:0 0 25px rgba(255,255,255,.15);
+}
+
+/* Cores individuais */
+
+.social-icons .fa-discord:hover{
+    color:#5865F2;
+}
+
+.social-icons .fa-youtube:hover{
+    color:#FF0000;
+}
+
+.social-icons .fa-instagram:hover{
+    color:#E1306C;
+}
+
+.social-icons .fa-x-twitter:hover{
+    color:#ffffff;
+}
+
+.social-icons .fa-tiktok:hover{
+    color:#25F4EE;
+}
+
+.social-icons .fa-github:hover{
+    color:#ffffff;
+}
+
+.fa-cube:hover,
+.fa-roblox:hover{
+    color:#ffffff;
+}
