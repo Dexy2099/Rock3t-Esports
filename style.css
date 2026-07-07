@@ -70,18 +70,13 @@ color:#9f9f9f;
 }
 
 .hero{
-
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    background: url("assets/bg.jpg") center center/cover no-repeat;
 }
 
 .overlay{
-
-background:rgba(0,0,0,.55);
 
 width:100%;
 
@@ -199,8 +194,6 @@ justify-content:space-around;
 
 text-align:center;
 
-background:#161616;
-
 }
 
 .stats h2{
@@ -212,7 +205,6 @@ font-size:60px;
 .parceiros{
     padding:120px;
     text-align:center;
-    background:#111;
 }
 
 .logos{
@@ -274,10 +266,9 @@ color:#888;
 }
 
 .hero-logo{
-    width:200px;
+    width:350px;
     max-width:90%;
     margin-bottom:30px;
-    filter:drop-shadow(0 0 25px rgba(255,255,255,.15));
     animation:float 4s ease-in-out infinite;
     transition:.3s;
 }
@@ -503,7 +494,6 @@ font-size:17px;
 .social{
     padding:90px 0;
     text-align:center;
-    background:#0b0b0b;
 }
 
 .social h2{

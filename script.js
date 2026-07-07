@@ -73,3 +73,16 @@ particlesJS("particles-js", {
     },
     retina_detect: true
 });
+
+const hero = document.querySelector(".hero");
+
+hero.addEventListener("mousemove", (e) => {
+
+    const rect = hero.getBoundingClientRect();
+
+    const x = ((e.clientX - rect.left) / rect.width - 0.5) * 20;
+    const y = ((e.clientY - rect.top) / rect.height - 0.5) * 20;
+
+    hero.style.backgroundPosition = `${50 + x}% ${50 + y}%`;
+
+});
