@@ -575,3 +575,14 @@ font-size:17px;
 .fa-roblox:hover{
     color:#ffffff;
 }
+
+.social-img img{
+    width:50px;
+    height:30px;
+    filter:invert(1);
+    transition:.3s;
+}
+
+.social-img:hover img{
+    transform:scale(1.15);
+}
